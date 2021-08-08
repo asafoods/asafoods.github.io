@@ -1,15 +1,21 @@
-var video = document.getElementById("myVideo");
 
-// Get the button
-var btn = document.getElementById("myBtn");
+var isIOS = /iPad|iPhone|iPod/.test(navigator.platform);
 
-// Pause and play the video, and change the button text
-function myFunction() {
-  if (video.paused) {
-    video.play();
-    btn.innerHTML = "Pause";
-  } else {
-    video.pause();
-    btn.innerHTML = "Play";
-  }
-}
+if (isIOS) {
+
+    var canvasVideo = new CanvasVideoPlayer({
+        videoSelector: '.video',
+        canvasSelector: '.canvas',
+        timelineSelector: false,
+        autoplay: true,
+        makeLoop: true,
+        pauseOnClick: false,
+        audio: false
+    });
+
+}else {
+
+    // Use HTML5 video
+    document.querySelectorAll('.canvas')[0].style.display = 'none';
+
+}  
