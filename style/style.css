@@ -104,11 +104,12 @@ header {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-bottom: 4rem;
+    margin-bottom: 4.5rem;
 }
 
 .hero-body .title {
     font-family: 'Montserrat', sans-serif;
+    margin-left:3px;
     font-weight: 300 !important;
     font-size: 4rem !important;
     letter-spacing: 15px;
