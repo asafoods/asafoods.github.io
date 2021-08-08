@@ -27,7 +27,7 @@ header {
 
 .logoname {
     font-family: 'Montserrat', sans-serif;
-    font-weight: 300 !important;
+    font-weight: 500 !important;
     color: #fff;
     text-transform: uppercase;
     cursor: pointer;
@@ -104,6 +104,7 @@ header {
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-bottom: 4rem;
 }
 
 .hero-body .title {
@@ -126,10 +127,11 @@ header {
     justify-content: center;
     align-items: center;
     color: #ffffff;
+    margin-bottom: 4rem;
 }
 .call{
-    width: 48px;
-    height: 48px;
+    width: 46.5px;
+    height: 46.5px;
 }
 .whp{
     width: 51px;
@@ -185,6 +187,10 @@ header {
     }
     .overlay{
         padding-left: 12px;
+    }
+    .hero-body .title {
+        font-size: 3rem !important;
+        letter-spacing: 10px;  
     }
     
 }
